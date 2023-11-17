@@ -84,6 +84,7 @@ const DonationDetail = () => {
             </div>
             <div>
               <div
+                className="text-black not-italic font-normal"
                 dangerouslySetInnerHTML={{
                   __html: donationDetail?.content,
                 }}
