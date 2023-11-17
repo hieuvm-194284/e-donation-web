@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config: Config = {
   content: [
@@ -16,5 +17,9 @@ const config: Config = {
     },
   },
   plugins: [],
+  fontFamily: {
+    sans: ['var(--font-inter)'],
+  },
+
 }
 export default config
