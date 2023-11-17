@@ -58,8 +58,8 @@ const DonationDetail = () => {
           </h3>
           <div className="w-6"></div>
         </div>
-        {false ? (
-          <div className="flex justify-center items-center p-4">
+        {isLoading || isError ? (
+          <div className="flex flex-col gap-2 justify-between bg-white p-4 border border-solid">
             <Skeleton active />
           </div>
         ) : (

@@ -76,7 +76,9 @@ const ListDonations = () => {
             </div>
           </div>
           {isLoading || isError ? (
-            <Skeleton active />
+            <div className="flex flex-col gap-2 justify-between bg-white p-4 border border-solid">
+              <Skeleton active />
+            </div>
           ) : (
             <div>
               {listDonation?.length > 0 &&
